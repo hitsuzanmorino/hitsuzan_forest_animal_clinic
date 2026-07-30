@@ -1,0 +1,758 @@
+/* =================================
+   ひつざん森の動物病院
+   仮ホームページ Ver.4
+================================= */
+
+
+/* ---------- 基本設定 ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    color: #555555;
+
+    background-color: #faf7f0;
+
+
+    font-family:
+        "Noto Sans JP",
+        "Hiragino Kaku Gothic ProN",
+        sans-serif;
+
+
+    line-height: 2;
+
+}
+
+
+
+/* ---------- トップ画像 ---------- */
+
+
+.hero {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+}
+
+
+.hero img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+
+
+/* ---------- カード ---------- */
+
+
+.section {
+
+    max-width: 900px;
+
+    margin: 70px auto;
+
+
+    padding: 50px 45px;
+
+
+    background-color: #ffffff;
+
+
+    border-radius:18px;
+
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.05);
+
+}
+
+
+
+
+
+/* ---------- 見出し ---------- */
+
+
+.section h2 {
+
+
+    position:relative;
+
+
+    margin-top:0;
+
+    margin-bottom:45px;
+
+
+    color:#172533;
+
+
+    font-size:30px;
+
+
+    font-weight:500;
+
+
+    letter-spacing:0.1em;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.clinic-name {
+
+
+    display:inline-block;
+
+
+    font-size:0.55em;
+
+
+    letter-spacing:0.2em;
+
+
+    color:#8a9188;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+/* 見出し線 */
+
+.section h2::before,
+.section h2::after {
+
+
+    content:"";
+
+
+    display:block;
+
+
+    width:140px;
+
+
+    height:1px;
+
+
+    background-color:#9aa59a;
+
+
+    margin:18px auto;
+
+
+}
+
+
+
+
+
+/* ---------- 本文 ---------- */
+
+
+.section p {
+
+
+    max-width:680px;
+
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+
+    margin-bottom:25px;
+
+
+    color:#555555;
+
+
+    line-height:2.2;
+
+
+}
+
+
+
+
+
+/* 中央寄せ文章 */
+
+.center-text {
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+/* ---------- 日付など ---------- */
+
+
+.event-date {
+
+
+    text-align:center;
+
+
+    margin:35px 0;
+
+
+}
+
+
+.date-title {
+
+
+    color:#8a9188;
+
+
+    font-size:15px;
+
+
+    letter-spacing:0.15em;
+
+
+}
+
+
+
+.date {
+
+
+    color:#172533;
+
+
+    font-size:22px;
+
+
+    line-height:2;
+
+
+    letter-spacing:0.08em;
+
+
+}
+
+
+
+
+.event-note {
+
+
+    padding:18px;
+
+
+    margin-top:30px;
+
+
+    text-align:center;
+
+
+    background-color:#f7f5ef;
+
+
+    border-radius:10px;
+
+
+}
+
+
+
+
+
+/* ---------- 地図 ---------- */
+
+
+.section img {
+
+
+    width:70%;
+
+
+    max-width:450px;
+
+
+    height:auto;
+
+
+    display:block;
+
+
+    margin:35px auto;
+
+
+}
+
+
+.access-text,
+.parking-text {
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+/* ---------- ボタン ---------- */
+
+
+.button {
+
+
+    display:inline-block;
+
+
+    padding:14px 34px;
+
+
+    margin-top:20px;
+
+
+    background-color:#172533;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    border-radius:40px;
+
+
+    letter-spacing:0.08em;
+
+
+}
+
+
+
+.access-button {
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+/* ---------- スタッフ募集 ---------- */
+
+
+.recruit {
+
+
+    border:1px solid #d8d5cc;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.recruit-message {
+
+
+    font-size:18px;
+
+
+    color:#172533;
+
+
+    letter-spacing:0.08em;
+
+
+}
+
+
+
+/* ---------- Instagram ---------- */
+
+
+.instagram {
+
+
+    text-align:center;
+
+
+}
+
+
+.instagram-qr img {
+
+
+    width:150px;
+
+
+    max-width:45%;
+
+
+    display:block;
+
+
+    margin:25px auto;
+
+
+}
+
+
+
+
+/* ---------- フッター ---------- */
+
+
+footer {
+
+
+    text-align:center;
+
+
+    padding:50px 20px;
+
+
+    color:#555;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+/* ---------- スマホ ---------- */
+
+
+@media screen and (max-width:768px){
+
+
+.hero {
+
+    margin-top:20px;
+
+}
+
+
+
+.section {
+
+
+    margin:40px 15px;
+
+
+    padding:35px 25px;
+
+
+    border-radius:14px;
+
+
+}
+
+
+
+.section h2 {
+
+
+    font-size:24px;
+
+
+    letter-spacing:0.08em;
+
+
+}
+
+
+
+.clinic-name {
+
+
+    font-size:0.55em;
+
+
+}
+
+
+
+.section h2::before,
+.section h2::after {
+
+
+    width:90px;
+
+
+}
+
+
+
+.section p {
+
+
+    font-size:15px;
+
+
+}
+
+
+
+.section img {
+
+
+    width:90%;
+
+
+}
+
+
+
+.button {
+
+
+    width:100%;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.instagram-qr img {
+
+
+    width:120px;
+
+
+}
+
+
+}
+
+/* recruitページ */
+
+.recruit-header {
+
+    text-align:center;
+
+    padding:35px 20px 10px;
+
+}
+
+
+.recruit-header h1 {
+
+    color:#172533;
+
+    font-size:24px;
+
+    font-weight:400;
+
+    letter-spacing:0.15em;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.recruit-body {
+
+    max-width:680px;
+
+    margin:0 auto;
+
+}
+
+
+
+.recruit-body ul {
+
+    padding-left:25px;
+
+}
+
+
+
+.recruit-body li {
+
+    margin-bottom:15px;
+
+}
+
+
+
+.recruit-contact {
+
+    text-align:center;
+
+}
+
+/* スマホ専用改行 */
+
+.sp-only {
+
+    display:none;
+
+}
+
+
+@media screen and (max-width:768px){
+
+
+    .sp-only {
+
+        display:inline;
+
+    }
+
+
+}
+
+.recruit-intro h2 {
+
+    margin-top:20px;
+
+    font-size:32px;
+
+}
+
+@media screen and (max-width:768px){
+
+    .recruit-intro h2 {
+
+        font-size:24px;
+
+    }
+
+}
+
+.recruit-header {
+
+    margin-bottom:0;
+
+}
+
+
+.recruit-intro {
+
+    margin-top:20px;
+
+}
+
+/* トップクイックリンク */
+
+.quick-links {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin:35px auto 50px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.quick-links a {
+
+    display:block;
+
+    padding:10px 25px;
+
+    border:1px solid #b8bdb5;
+
+    border-radius:4px;
+
+    text-decoration:none;
+
+    color:#172533;
+
+    letter-spacing:0.12em;
+
+    background:transparent;
+
+    font-size:14px;
+
+    text-align:center;
+
+}
+
+
+
+.quick-links a:hover {
+
+    background-color:#f5f3ed;
+
+}
+
+
+
+/* スマホ */
+
+@media screen and (max-width:768px){
+
+.quick-links {
+
+    flex-wrap:nowrap;
+
+    gap:8px;
+
+}
+
+
+.quick-links a {
+
+    padding:9px 10px;
+
+    font-size:12px;
+
+    flex:1;
+
+}
+
+}
