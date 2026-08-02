@@ -784,3 +784,48 @@ footer {
 .button:active {
   transform: translateY(0);
 }
+
+/* スマホタップ時のハイライト解除 */
+.button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.button {
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* メインボタン表示修正 */
+a.button,
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:active {
+  color: #ffffff !important;
+  background-color: #172533;
+  text-decoration: none !important;
+}
+
+
+/* スマホタップ時の四角いハイライト解除 */
+a.button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* PCカーソル時の動き */
+a.button {
+  transition: 0.25s ease;
+}
+
+
+a.button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+
+a.button:active {
+  transform: translateY(0);
+}
