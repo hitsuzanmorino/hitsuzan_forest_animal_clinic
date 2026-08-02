@@ -440,7 +440,21 @@ footer {
 
 }
 
+/* ---------- メール注意書き ---------- */
 
+.mail-note {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #888888;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
 
 /* スマホ専用改行 */
 
