@@ -829,3 +829,34 @@ a.button:hover {
 a.button:active {
   transform: translateY(0);
 }
+
+/* button final fix */
+
+.button,
+.button:link,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus,
+.button:focus-visible {
+  color: #ffffff !important;
+  background-color: #172533;
+  text-decoration: none !important;
+  outline: none;
+}
+
+.button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: 0.25s ease;
+}
+
+.button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
