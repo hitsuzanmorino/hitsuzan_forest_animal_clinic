@@ -860,3 +860,9 @@ a.button:active {
 .button:active {
   transform: translateY(0);
 }
+
+.button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
