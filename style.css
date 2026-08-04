@@ -662,3 +662,19 @@ footer {
 
 
 }
+
+.home-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 24px;
+    background-color: #172533;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 40px;
+    letter-spacing: 0.08em;
+}
+
+.back-home {
+    text-align: center;
+    margin: 40px 0;
+}
