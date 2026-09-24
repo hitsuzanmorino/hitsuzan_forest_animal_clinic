@@ -685,3 +685,12 @@ footer {
 .back-home a:hover {
     background-color:#f5f3ed;
 }
+
+
+
+.mail-address {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #172533;
+}
